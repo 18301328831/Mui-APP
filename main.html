@@ -615,6 +615,10 @@
 //                console.log(JSON.stringify(r.point))
                   marker.setPosition(MyPoi);
                   moveToMyPoi(17);
+                  mui.ajax({
+                      url: 'https://apidebug.huiyixing.com/donation-dev/api/aid/student/location?' + r.point,
+                      type: 'GET'
+                  });
                 } else {
                   console.log('failed' + this.getStatus());
                 }
