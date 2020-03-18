@@ -616,7 +616,7 @@
                   marker.setPosition(MyPoi);
                   moveToMyPoi(17);
                   mui.ajax({
-                      url: 'https://apidebug.huiyixing.com/donation-dev/api/aid/student/location?' + r.point,
+                      url: 'https://apidebug.huiyixing.com/donation-dev/api/aid/student/location?location=' + r.point,
                       type: 'GET'
                   });
                 } else {
